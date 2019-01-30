@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://challenge.distribusion.com/the_one
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Length:
+      - '0'
+      Location:
+      - https://challenge.distribusion.com/the_one
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sun, 27 Jan 2019 22:25:43 GMT
+- request:
+    method: get
+    uri: https://challenge.distribusion.com/the_one
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '477'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyIo4oyQ4pagX+KWoCkiOiJUaGlzIGlzIHlvdXIgbGFzdCBjaGFuY2UuIEFmdGVyIHRoaXMsIHRoZXJlIGlzIG5vIHR1cm5pbmcgYmFjay4gWW91IHRha2UgdGhlIGJsdWUgcGlsbCAtIHRoZSBzdG9yeSBlbmRzLCB5b3Ugd2FrZSB1cCBpbiB5b3VyIGJlZCBhbmQgYmVsaWV2ZSB3aGF0ZXZlciB5b3Ugd2FudCB0byBiZWxpZXZlLiBZb3UgdGFrZSB0aGUgcmVkIHBpbGwgLSB5b3Ugc3RheSBpbiBXb25kZXJsYW5kIGFuZCBJIHNob3cgeW91IGhvdyBkZWVwIHRoZSByYWJiaXQtaG9sZSBnb2VzLiIsInBpbGxzIjp7InJlZCI6eyJsb2NhdGlvbiI6Imh0dHA6Ly9jaGFsbGVuZ2UuZGlzdHJpYnVzaW9uLmNvbS90aGVfb25lL3JlZF9waWxsIiwicGFzc3BocmFzZSI6IkthbnM0cy1pJC1nMDFuZy1ieTMtYnllIn0sImJsdWUiOnsibG9jYXRpb24iOiJodHRwOi8vY2hhbGxlbmdlLmRpc3RyaWJ1c2lvbi5jb20vdGhlX29uZS9ibHVlX3BpbGwifX19
+    http_version: 
+  recorded_at: Sun, 27 Jan 2019 22:25:43 GMT
+recorded_with: VCR 4.0.0

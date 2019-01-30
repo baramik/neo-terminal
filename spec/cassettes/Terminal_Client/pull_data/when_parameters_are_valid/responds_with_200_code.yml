@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://challenge.distribusion.com/the_one/routes?passphrase=Kans4s-i$-g01ng-by3-bye&source=loopholes
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Length:
+      - '0'
+      Location:
+      - https://challenge.distribusion.com/the_one/routes?source=loopholes&passphrase=Kans4s-i%24-g01ng-by3-bye
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sun, 27 Jan 2019 22:51:56 GMT
+- request:
+    method: get
+    uri: https://challenge.distribusion.com/the_one/routes?passphrase=Kans4s-i$-g01ng-by3-bye&source=loopholes
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/zip
+      Content-Disposition:
+      - attachment; filename*=UTF-8''loopholes
+      Content-Length:
+      - '723'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        UEsDBAoAAAAAACqKY0kAAAAAAAAAAAAAAAAKABAAbG9vcGhvbGVzL1VYDACDbRxYEGMbWPUBFABQSwMEFAAIAAgAQYtjSQAAAAAAAAAAAAAAABkAEABsb29waG9sZXMvbm9kZV9wYWlycy5qc29uVVgMAMhsHFgaZRtY9QEUAKvmUlBQystPSY0vSMwsKlayUogGiigoVINJoFxmClBMyVBJByZQXJJYVBIP0gKSSE/MzU1ESKbmpcClSjJSSxKVwDK1OtgMNcJlaBJII3lmGuMyE6ITq6E5iblJKTBTgWQsVy0XAFBLBwjG0b4KZgAAABgBAABQSwMEFAAIAAgAGY5jSQAAAAAAAAAAAAAAABUAEABsb29waG9sZXMvcm91dGVzLmpzb25VWAwAyWwcWHJqG1j1ARQAq+ZSUFAqyi8tSS1WslKIBvIUFKrBJEw8PjMFKKNkqKQDE87LT0mNL0jMLMKUKi5JLCqJL8nMTQVJGBkYG+gaGukaG4YYGlsZGFgZmEQh1KbmpeBRaRqlBFZYq0OWm4yJd5Mp0W4yI8JNRrjdZDQI3URCOJkR7SZzItxkjNtNlsS7yYBoNxnA3AQkY7lquQBQSwcIgR/xeY8AAAD5AgAAUEsBAhUDCgAAAAAAKopjSQAAAAAAAAAAAAAAAAoADAAAAAAAAAAAQO1BAAAAAGxvb3Bob2xlcy9VWAgAg20cWBBjG1hQSwECFQMUAAgACABBi2NJxtG+CmYAAAAYAQAAGQAMAAAAAAAAAABApIE4AAAAbG9vcGhvbGVzL25vZGVfcGFpcnMuanNvblVYCADIbBxYGmUbWFBLAQIVAxQACAAIABmOY0mBH/F5jwAAAPkCAAAVAAwAAAAAAAAAAECkgfUAAABsb29waG9sZXMvcm91dGVzLmpzb25VWAgAyWwcWHJqG1hQSwUGAAAAAAMAAwDmAAAA1wEAAAAA
+    http_version: 
+  recorded_at: Sun, 27 Jan 2019 22:51:56 GMT
+recorded_with: VCR 4.0.0

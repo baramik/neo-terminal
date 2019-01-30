@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require './app'
+
+terminal = NeoTerminal.new 
+
+terminal.clear_terminal_data
+terminal.pull_data
+parsed_data = terminal.parse_data
+terminal.push_data(data: parsed_data)
+terminal.clear_terminal_data
